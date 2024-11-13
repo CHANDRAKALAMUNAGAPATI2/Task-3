@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopMate - E-commerce Website</title>
+    <link rel="stylesheet" href="two3.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+		
+            <h1>Welcome to the Online Bookstore</h1>
+    <p>Your one-stop shop for books, stories, and knowledge. Explore our collection.</p>
+        </header>
+
+        <!-- Featured Books Section -->
+        <div class="Books">
+            <h2>Featured Books</h2>
+            <div class="Book-list">
+                <!-- Book 1 -->
+                <div class="Book-item">
+                    <img src="Book1.jpg" alt="Book 1">
+                    <p>by SHRAYA BHINDER</p>
+                    <p>$10.00</p>
+                    <button onclick="addToCart(10)"> Buy Now</button>
+                </div>
+                <!-- Book 2 -->
+                <div class="Book-item">
+                    <img src="Book2.jpg" alt="Book 2">
+                    <p>by ANAND KUMAR</p>
+                    <p>$15.00</p>
+                    <button onclick="addToCart(15)"> Buy Now</button>
+                </div>
+                <!-- Book 3 -->
+                <div class="Book-item">
+                    <img src="Book3.jpg" alt="Book 3">
+                    <p>by VIKRANTH KHANNA</p>
+                    <p>$20.00</p>
+                    <button onclick="addToCart(20)"> Buy Now</button>
+                </div>
+                <!-- Book 4 -->
+                <div class="Book-item">
+                    <img src="Book4.jpg" alt="Book 4">
+                    <p>by LAVANYA PANDYA</p>
+                    <p>$25.00</p>
+                    <button onclick="addToCart(25)"> Buy Now</button>
+                </div>
+                <!-- Book 5 -->
+                <div class="Book-item">
+                    <img src="Book5.jpg" alt="Book 5">
+                    <p>by AJAY K PANDEY</p>
+                    <p>$20.00</p>
+                    <button onclick="addToCart(20)"> Buy Now</button>
+                </div>
+                <!-- Book 6 -->
+                <div class="Book-item">
+                    <img src="Book6.jpg" alt="Book 6">
+                    <p>by ASTHA ANAND</p>
+                    <p>$45.00</p>
+                    <button onclick="addToCart(45)"> Buy Now</button>
+                </div>
+                <!-- Book 7 -->
+                <div class="Book-item">
+                    <img src="Book7.jpg" alt="Book 7">
+                    <p>by Dr.JOSEPH MURTHY</p>
+                    <p>$40.00</p>
+                    <button onclick="addToCart(40)"> Buy Now</button>
+                </div>
+                <!-- Book 8 -->
+                <div class="Book-item">
+                    <img src="Book8.jpg" alt="Book 8">
+                    <p>by RENUKA GAVRANI </p>
+                    <p>$30.00</p>
+                    <button onclick="addToCart(30)"> Buy Now</button>
+                </div>
+                <!-- Book 9 -->
+                <div class="Book-item">
+                    <img src="Book9.jpg" alt="Book 9">
+                    <p>by Dr.APJ Abdul Kalam</p>
+                    <p>$50.00</p>
+                    <button onclick="addToCart(50)"> Buy Now</button>
+                </div>
+              
+            </div>
+            <div class="cart">
+                <h3>Your Cart</h3>
+                <ul id="cart-items"></ul>
+                <p>Total: $<span id="total-price">0</span></p>
+            </div>
+        </div>
+
+        <!-- Joke Section -->
+        <div class="joke-section">
+            <h2>Joke of the Day</h2>
+            <div id="joke" class="joke-content">Loading joke...</div>
+            <button onclick="getJoke()">Get Another Joke</button>
+        </div>
+
+        <!-- Quiz Section -->
+        <div class="quiz-section">
+            <h2>Take our Quiz</h2>
+            <div class="quiz-container">
+                <div id="quiz-question">Loading question...</div>
+                <div id="quiz-options"></div>
+                <button onclick="nextQuestion()">Next Question</button>
+                <div id="score">Score: 0</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="three3.js"></script>
+</body>
+</html>
